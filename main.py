@@ -14,7 +14,7 @@ FTP_PASS = "33p3q95r"
 # DISCORD WEBHOOK
 # =========================
 
-WEBHOOK = "https://discord.com/api/webhooks/1509506184275824660/489DX4vPKFAn9-0RU_8n_PwmCFwkwb77l3HT_wqXksFKf4YjX-IIypmXrbJHuvLYni4Y"
+WEBHOOK = "https://discord.com/api/webhooks/1509533335750316174/zurVksPoPakkvwZ2ycBpwAFcwScjn2avULdvGTE6d6_3hKDw98CtU-GojRxRNe6KSzMr"
 
 # =========================
 
@@ -27,10 +27,11 @@ print("Logger gestartet")
 while True:
     try:
         ftp = FTP()
-ftp.connect(FTP_HOST, 32031, timeout=30)
-ftp.login(FTP_USER, FTP_PASS)
 
-ftp.set_pasv(True)
+        ftp.connect(FTP_HOST, 32031, timeout=30)
+        ftp.login(FTP_USER, FTP_PASS)
+
+        ftp.set_pasv(True)
 
         lines = []
 
