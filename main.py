@@ -32,6 +32,14 @@ while True:
         text = "\n".join(lines)
         
         print(text)
+        
+        r = requests.post(
+    WEBHOOK,
+    json={"content": "TEST NACHRICHT"}
+)
+
+print(r.status_code)
+print(r.text)
 
         if text != last_text:
 
