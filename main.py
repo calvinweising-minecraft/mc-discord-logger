@@ -2,7 +2,7 @@ from ftplib import FTP
 import time
 import requests
 
-FTP_HOST = "185.213.25.183"
+FTP_HOST = "eu8654360.g-portal.game"
 FTP_USER = "gptfp464180618425463668"
 FTP_PASS = "33p3q95r"
 
