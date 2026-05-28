@@ -28,7 +28,7 @@ while True:
     try:
         ftp = FTP()
 
-        ftp.connect(FTP_HOST, 29585, timeout=30)
+        ftp.connect(FTP_HOST, 21, timeout=30)
         ftp.login(FTP_USER, FTP_PASS)
 
         ftp.set_pasv(True)
