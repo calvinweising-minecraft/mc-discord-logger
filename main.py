@@ -2,7 +2,7 @@ from ftplib import FTP
 import time
 import requests
 
-FTP_HOST = "eu8654360.g-portal.game"
+FTP_HOST = "gpftp464180618425463668"
 FTP_USER = "gptfp464180618425463668"
 FTP_PASS = "33p3q95r"
 
@@ -18,7 +18,7 @@ while True:
     try:
         ftp = FTP()
 
-        ftp.connect(FTP_HOST, 32031, timeout=30)
+        ftp.connect(FTP_HOST, 29575, timeout=30)
         ftp.login(FTP_USER, FTP_PASS)
 
         ftp.prot_p()
