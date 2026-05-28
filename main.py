@@ -6,15 +6,15 @@ import requests
 # FTP DATEN
 # =========================
 
-FTP_HOST = "DEIN_HOST"
-FTP_USER = "DEIN_USER"
-FTP_PASS = "DEIN_PASS"
+FTP_HOST = "185.213.25.183"
+FTP_USER = "gptfp464180618425463668"
+FTP_PASS = "33p3q95r"
 
 # =========================
 # DISCORD WEBHOOK
 # =========================
 
-WEBHOOK = "DEIN_WEBHOOK"
+WEBHOOK = "https://discord.com/api/webhooks/1509506184275824660/489DX4vPKFAn9-0RU_8n_PwmCFwkwb77l3HT_wqXksFKf4YjX-IIypmXrbJHuvLYni4Y"
 
 # =========================
 
@@ -27,7 +27,7 @@ print("Logger gestartet")
 while True:
     try:
         ftp = FTP()
-ftp.connect(FTP_HOST, 21, timeout=30)
+ftp.connect(FTP_HOST, 32031, timeout=30)
 ftp.login(FTP_USER, FTP_PASS)
 
 ftp.set_pasv(True)
