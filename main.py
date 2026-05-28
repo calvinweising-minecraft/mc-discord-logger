@@ -29,11 +29,11 @@ while True:
 
         ftp.quit()
 
-        text = "\n".join(lines)
-        
-        print(text)
-        
-        r = requests.post(
+       text = "\n".join(lines)
+
+print(text)
+
+r = requests.post(
     WEBHOOK,
     json={"content": "TEST NACHRICHT"}
 )
@@ -41,7 +41,7 @@ while True:
 print(r.status_code)
 print(r.text)
 
-        if text != last_text:
+if text != last_text:
 
             new_part = text[len(last_text):]
 
