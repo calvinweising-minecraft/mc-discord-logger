@@ -1,22 +1,12 @@
-from ftplib import FTP
+from ftplib import FTP_TLS
 import time
 import requests
-
-# =========================
-# FTP DATEN
-# =========================
 
 FTP_HOST = "185.213.25.183"
 FTP_USER = "gptfp464180618425463668"
 FTP_PASS = "33p3q95r"
 
-# =========================
-# DISCORD WEBHOOK
-# =========================
-
 WEBHOOK = "https://discord.com/api/webhooks/1509533335750316174/zurVksPoPakkvwZ2ycBpwAFcwScjn2avULdvGTE6d6_3hKDw98CtU-GojRxRNe6KSzMr"
-
-# =========================
 
 LOG_PATH = "/logs/latest.log"
 
@@ -26,12 +16,12 @@ print("Logger gestartet")
 
 while True:
     try:
-        ftp = FTP()
+        ftp = FTP_TLS()
 
-        ftp.connect(FTP_HOST,32031, timeout=30)
+        ftp.connect(FTP_HOST, 32031, timeout=30)
         ftp.login(FTP_USER, FTP_PASS)
 
-        ftp.set_pasv(True)
+        ftp.prot_p()
 
         lines = []
 
