@@ -1,4 +1,4 @@
-from ftplib import FTP_TLS
+from ftplib import FTP
 import time
 import requests
 
@@ -16,7 +16,7 @@ print("Logger gestartet")
 
 while True:
     try:
-        ftp = FTP_TLS()
+        ftp = FTP()
 
         ftp.connect(FTP_HOST, 32031, timeout=30)
         ftp.login(FTP_USER, FTP_PASS)
