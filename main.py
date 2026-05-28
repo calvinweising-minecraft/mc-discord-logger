@@ -30,6 +30,8 @@ while True:
         ftp.quit()
 
         text = "\n".join(lines)
+        
+        print(text)
 
         if text != last_text:
 
