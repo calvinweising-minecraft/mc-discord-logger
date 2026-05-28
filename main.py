@@ -8,7 +8,7 @@ FTP_PASS = "33p3q95r"
 
 WEBHOOK = "https://discord.com/api/webhooks/1509533335750316174/zurVksPoPakkvwZ2ycBpwAFcwScjn2avULdvGTE6d6_3hKDw98CtU-GojRxRNe6KSzMr"
 
-LOG_PATH = "/logs/latest.log"
+LOG_PATH = "logs/latest.log"
 
 last_text = ""
 
